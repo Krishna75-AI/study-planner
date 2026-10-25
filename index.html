@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <header>
+        <h1>MY STUDY PLANNER</h1>
+        <p>Money buys craziest happiness</p>
+    </header>
+    <main>
+        <section>
+            <h2>My Subjects</h2>
+            <ul>
+                <li>web tech</li>
+                <li>java</li>
+                <li>dsa with c</li>
+                <li>coa</li>
+                <li>dccn</li>
+            </ul>
+
+        </section>
+        <section>
+            <h1>my other goals</h1>
+            <ul>
+                <li>Career preparation</li>
+                <li>Blender practice</li>
+            </ul>
+        </section>
+    </main>
+    <section id = "timetable">
+        <h2>My Weekly Timetable</h2>
+
+<div id="study-timer">
+    <h3>Focus Timer</h3>
+
+<label for="timer-duration">Focus duration:</label>
+<select id="timer-duration">
+    <option value="15">15 minutes</option>
+    <option value="25" selected>25 minutes</option>
+    <option value="45">45 minutes</option>
+    <option value="60">60 minutes</option>
+</select>
+
+
+    <p id="timer-display">25:00</p>
+
+    <button id="start-timer">Start</button>
+    <button id="pause-timer">Pause</button>
+    <button id="reset-timer">Reset</button>
+</div>
+
+        <label for="mode">Choose your schedule:</label>
+        <select id = "mode">
+            <option value = "normal">Normal week</option>
+            <option value = "exam">Exam week</option>
+            <option value = "holiday">Holiday week</option>
+        </select>
+        <div id = "schedule"></div>
+        <p id = "progress">Completed:0/0</p>
+    </section>
+    <script src = "script.js"></script>
+</body>
+</html>
